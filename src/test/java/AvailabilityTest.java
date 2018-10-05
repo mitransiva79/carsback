@@ -30,7 +30,13 @@ public class AvailabilityTest
     @Test
     public void isFirstNameValid()
     {
-        assertTrue("first name invalid", customerDetailsValidation.isFirstNameValid("mitran"));
+        assertTrue("first name invalid", customerDetailsValidation.isFirstNameValid("mitran%"));
+    }
+
+    @Test
+    public void isFirstNameValidTest()
+    {
+        assertTrue("first name invalid", customerDetailsValidation.isFirstNameValid("mitran%"));
     }
 
 
